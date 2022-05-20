@@ -29,7 +29,7 @@
           </a>
           <ul class="header-list">
             <li class="item">
-              <a href="./index.html" class="link-current"> Студия </a>
+              <a href="./index.html" class="link link-current"> Студия </a>
             </li>
             <li class="item">
               <a href="./portfolio.html" class="link"> Портфолио </a>
@@ -65,7 +65,82 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Заказать услугу
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal-form">
+              <button class="modal-btn" data-modal-close>
+                <img
+                  src="./images/studio/Vector-close.png"
+                  alt="хрестик"
+                  width="11px"
+                />
+                <!-- <svg
+                  viewBox="0 0 19 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                >
+                  <g filter="url(#a)">
+                    <path
+                      d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z"
+                      fill="#000"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="a"
+                      x="-4"
+                      y="0"
+                      width="26"
+                      height="26"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                      />
+                      <feBlend
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_1_1670"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                      />
+                      <feBlend
+                        in2="effect1_dropShadow_1_1670"
+                        result="effect2_dropShadow_1_1670"
+                      />
+                      <feBlend
+                        in="SourceGraphic"
+                        in2="effect2_dropShadow_1_1670"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg> -->
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <!--Сильные стороны компании-->
@@ -124,19 +199,22 @@
           </ul>
         </div>
       </section>
-      <!--Профиль компании-->
+      <!--Чем мы занимаемся-->
       <section class="profile-section section">
         <div class="container profile-section">
           <h2 class="profile-section-title">Чем мы занимаемся</h2>
           <ul class="list profile-section-list">
             <li class="profile-section-item">
               <img src="./images/studio/box1.jpg" alt="блок 1" width="370" />
+              <p class="profile-text">Десктопные приложения</p>
             </li>
             <li class="profile-section-item">
               <img src="./images/studio/box2.jpg" alt="блок 2" width="370" />
+              <p class="profile-text">Мобильные приложения</p>
             </li>
             <li class="profile-section-item">
               <img src="./images/studio/box3.jpg" alt="блок 3" width="370" />
+              <p class="profile-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -523,5 +601,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
