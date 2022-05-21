@@ -12,14 +12,10 @@
 :root {
   --primary-text-color: #757575;
   --primary-title-color: #212121;
-  
-    
+
   /* animations */
   --mid-anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
- 
-  
 
 body {
   background-color: #ffffff;
@@ -247,8 +243,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opasity: cubic-bezier(0.55, 0.055, 0.675, 0.19); 
-  visibility: 700ms ease;
+  transition: opasity cubic-bezier(0.55, 0.055, 0.675, 0.19),
+    visibility 700ms ease;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -478,8 +474,7 @@ img {
   height: 44px;
   background-color: #fff;
   border-radius: 50%;
-  transition: color var (--mid-anim),
-  background-color var (--mid-anim);
+  transition: color var (--mid-anim), background-color var (--mid-anim);
 }
 
 .social-link:hover,
@@ -644,8 +639,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var (--mid-anim),
-    color var (--mid-anim);
+  transition: background-color var (--mid-anim), color var (--mid-anim);
 }
 
 .footer-social-link:hover,
@@ -689,8 +683,7 @@ img {
   border-radius: 4px;
   border: transparent;
 
-  transition: color var (--mid-anim),
-    background-color var (--mid-anim),
+  transition: color var (--mid-anim), background-color var (--mid-anim),
     box-shadow color var (--mid-anim);
 }
 
@@ -774,28 +767,28 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-position: absolute;
+  position: absolute;
 
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(33, 150, 243, 0.9);
-opacity: 0;
-transform: translateY(100%);
-transition: transform var(--mid-anim);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform var(--mid-anim);
 }
 
 .projects-thumb:hover .projects-overlay {
   opacity: 1;
   transform: translateY(0);
- 
 }
 
 .overlay-text {
-position: absolute;
-padding: 63px 24px;
-font-size: 18px;
-line-height: 28px;
-letter-spacing: 0.03em;
-color: #FFFFFF;}
+  position: absolute;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
