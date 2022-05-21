@@ -129,7 +129,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-title-color);
-  transition: color var (--mid-anim);
+  transition: color var(--mid-anim);
 }
 .header-list .link:hover,
 .header-list .link:focus {
@@ -162,7 +162,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: currentColor;
-  transition: color var (--mid-anim);
+  transition: color var(--mid-anim);
 }
 .auth-nav-item {
   display: flex;
@@ -474,7 +474,7 @@ img {
   height: 44px;
   background-color: #fff;
   border-radius: 50%;
-  transition: color var (--mid-anim), background-color var (--mid-anim);
+  transition: color var(--mid-anim), background-color var(--mid-anim);
 }
 
 .social-link:hover,
@@ -507,7 +507,7 @@ img {
 .klient-section-item {
   width: 170px;
   height: 92px;
-  transition: border var (--mid-anim);
+  transition: border var(--mid-anim);
   /* margin-right: 30px; */
 }
 
@@ -519,11 +519,11 @@ img {
   border-radius: 4px;
   width: 100%;
   height: 100%;
-  transition: border var (--mid-anim);
+  transition: border var(--mid-anim), fill var(--mid-anim);
 }
 
-.klient-section-item:hover,
-.klient-section-item:focus {
+.klient-link:hover,
+.klient-link:focus {
   border: 1px solid #2196f3;
 }
 
@@ -639,7 +639,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var (--mid-anim), color var (--mid-anim);
+  transition: background-color var(--mid-anim), color var(--mid-anim);
 }
 
 .footer-social-link:hover,
@@ -683,8 +683,8 @@ img {
   border-radius: 4px;
   border: transparent;
 
-  transition: color var (--mid-anim), background-color var (--mid-anim),
-    box-shadow color var (--mid-anim);
+  transition: color var(--mid-anim), background-color var(--mid-anim),
+    box-shadow color var(--mid-anim);
 }
 
 .projects-section-item {
@@ -715,7 +715,7 @@ img {
 }
 .projects-image-link {
   display: block;
-  transition: box-shadow var (--mid-anim);
+  transition: box-shadow var(--mid-anim);
 }
 
 .projects-image-link:hover,
@@ -776,10 +776,11 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
   transform: translateY(100%);
-  transition: transform var(--mid-anim);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-thumb:hover .projects-overlay {
+.projects-thumb:hover .projects-overlay,
+.projects-thumb:focus .projects-overlay {
   opacity: 1;
   transform: translateY(0);
 }
